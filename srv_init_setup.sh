@@ -12,8 +12,10 @@ if [ ! -f /var/run/bootflag ]; then
         #creating flag file to check if this is a second run
         sudo touch /var/run/bootflag
         echo "Flag created"
+        #Initial commands go here
+        
         echo "Rebooting..."
-        #sudo reboot
+        sudo reboot
 else
         echo "resuming script..."
         #remove the bashrc entry 
